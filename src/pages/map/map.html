@@ -1,0 +1,23 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>map</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <agm-map [zoom]="16" [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="primary">
+        <ion-buttons>
+            <button ion-button (click)="close_modal()">Close</button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>
