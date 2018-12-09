@@ -11,6 +11,7 @@ import { TabsPage, HistoryPage, MapPage } from '../pages/index.pages';
 //plug ins
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { Contacts} from '@ionic-native/contacts';
 
 // serivces
 import { HistoryService } from '../providers/history/history';
@@ -44,7 +45,8 @@ import { AgmCoreModule } from '@agm/core';
     StatusBar,
     SplashScreen,
     BarcodeScanner,
-    InAppBrowser,  
+    InAppBrowser,
+    Contacts,  
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     HistoryService
   ]

@@ -26,8 +26,19 @@ export class HomePage {
       console.log("realizing scan");
 
       if (!this.platform.is("cordova")) {
-//        this.historyService.add_to_history("http://www.google.com");
+/*        this.historyService.add_to_history("http://www.google.com");
           this.historyService.add_to_history("geo:-12.1177550355307,-76.98039308031923");
+          this.historyService.add_to_history(`BEGIN:VCARD
+VERSION:2.1
+N:Kent;Clark
+FN:Clark Kent
+ORG:
+TEL;HOME;VOICE:12345
+TEL;TYPE=cell:67890
+ADR;TYPE=work:;;;
+EMAIL:clark@superman.com
+END:VCARD` ); */
+           this.historyService.add_to_history("MATMSG:TO:andresdev@gmail.com;SUB:Hello World;BODY:Greetings from Andres!;;"); 
           return;
       }
 
